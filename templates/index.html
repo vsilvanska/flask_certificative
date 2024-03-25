@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block content %}
+    <div class="container mx-auto mt-20">
+         <h1>{% block title %}Encodez vos données{% endblock %}</h1>
+         <form method="post">  
+            <div>
+                <label for="numero">Numero de GSM :</label>
+                <input class="border rounded py-2 px-3 text-gray-700" type="numero" id="numero" name="numero" required>
+            </div>
+            <div>
+                <label for="modele">Modèle de GSM :</label>
+                <input class="border rounded py-2 px-3 text-gray-700" type="modele" id="modele" name="modele" required>
+            </div>
+            <div>
+                <label for="marque">Marque de GSM :</label>
+                <input class="border rounded py-2 px-3 text-gray-700" type="marque" id="marque" name="marque" required>
+            </div>
+                <label for="annee">Année de fabrication :</label>
+                <input class="border rounded py-2 px-3 text-gray-700" type="annee" id="annee" name="annee" required>
+            </div>
+            <div>
+                <button class="bg-blue-500 text-white font-bold py-2 px-4 rounded" type="submit" value="submit">
+                    Valider
+                </button>
+            </div>
+        </form>
+    </div>
+{% endblock %}
